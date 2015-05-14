@@ -10,6 +10,8 @@ Router.map ->
         Meteor.subscribe 'favorites'
         Meteor.subscribe 'comments'
         Meteor.subscribe 'attachments'
+        # Meteor.subscribe 'calendar', ->
+        	# Session.set 'superCalendarReady', true
       ]
     onBeforeAction: ->
       if not Meteor.user()
@@ -26,7 +28,7 @@ Router.map ->
     path: "/profile"
     waitOn: ->
       Meteor.subscribe 'profilePictures'
-      
+
   @route "account",
     path: "/account"
 

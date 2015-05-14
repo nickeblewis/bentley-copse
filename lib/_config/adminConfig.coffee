@@ -1,6 +1,6 @@
 @AdminConfig =
 	name: Config.name
-	collections : 
+	collections :
 		Posts: {
 			color: 'red'
 			icon: 'pencil'
@@ -20,20 +20,45 @@
               {label:'User',name:'owner',collection:'Users'}
             ]
 		}
+		Customers: {
+			color: 'orange'
+			icon: 'users'
+			auxCollections: ['Customers']
+			tableColumns: [
+				{label: 'Name',name:'name'}
+			]
+		}
+		Bookings: {
+			color: 'yellow'
+			icon: 'calendar'
+			auxCollections: ['Bookings']
+			tableColumns: [
+				{label: 'Name',name:'name'}
+			]
+		}
+		Allocations: {
+			color: 'red'
+			icon: 'sitemap'
+			auxCollections: ['Allocations']
+			tableColumns: [
+				{label: 'Name',name:'name'}
+			]
+		}
+
 	dashboard:
 		homeUrl: '/dashboard'
-		# widgets: [
-		# 	{
-		# 		template: 'adminCollectionWidget'
-		# 		data:
-		# 			collection: 'Posts'
-		# 			class: 'col-lg-3 col-xs-6'
-		# 	}
-		# 	{
-		# 		template: 'adminUserWidget'
-		# 		data:
-		# 			class: 'col-lg-3 col-xs-6'
-		# 	}
-		# ]
-	autoForm: 
+			# widgets: [
+			# 	{
+			# 		template: 'adminCollectionWidget'
+			# 		data:
+			# 			collection: 'Posts'
+			# 			class: 'col-lg-3 col-xs-6'
+			# 	}
+			# 	{
+			# 		template: 'adminUserWidget'
+			# 		data:
+			# 			class: 'col-lg-3 col-xs-6'
+			# 	}
+			# ]
+	autoForm:
 	        omitFields: ['createdAt', 'updatedAt']

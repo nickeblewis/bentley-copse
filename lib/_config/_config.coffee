@@ -1,5 +1,5 @@
 @Config =
-	name: 'My App'
+	name: 'Bentley Copse'
 	title: ->
 			TAPi18n.__ 'configTitle'
 	subtitle: ->
@@ -21,16 +21,16 @@
 
 	socialMedia:
 		facebook:
-			url: 'http://facebook.com/benjaminpeterjones'
+			url: 'http://facebook.com/nicklewis'
 			icon: 'facebook'
 		twitter:
-			url: 'http://twitter.com/BenPeterJones'
+			url: 'http://twitter.com/nicklewis'
 			icon: 'twitter'
 		github:
-			url: 'http://github.com/yogiben'
+			url: 'http://github.com/nickeblewis'
 			icon: 'github'
 		info:
-			url: 'http://meteorfactory.io'
+			url: 'http://nicklewis.net'
 			icon: 'link'
 
 	publicRoutes: ['home']

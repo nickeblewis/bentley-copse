@@ -91,6 +91,7 @@ mongo@1.1.0
 mongo-livedata@1.0.8
 mpowaga:string-template@0.1.0
 mrt:googlemaps@0.1.1
+mrt:jquery-ui@1.9.2
 mrt:moment@2.8.1
 multiply:iron-router-progress@1.0.1
 natestrauser:animate-css@3.2.6
@@ -112,6 +113,7 @@ reload@1.1.3
 retry@1.0.3
 reywood:publish-composite@1.3.6
 routepolicy@1.0.5
+rzymek:fullcalendar@2.2.6_2
 service-configuration@1.0.4
 session@1.1.0
 sha@1.0.3

@@ -1,12 +1,14 @@
 <template name="dashboard">
 	<div class="container">
 		<div class="row" id="champion-messages">
-			<div class="col-md-3">
+			<!-- <div class="col-md-3">
 				{{> add}}
 				{{> favorites}}
-			</div>
-			<div class="col-md-9">
-				{{> posts}}
+			</div> -->
+			<!-- <div class="col-md-9"> -->
+			<div class="col-md-12">
+				<!-- {{> posts}} -->
+				{{> calendar}}
 			</div>
 		</div>
 	</div>
@@ -14,7 +16,7 @@
 
 
 <template name="add">
-	<div class="panel panel-default">
+	<!-- <div class="panel panel-default">
 			<div class="panel-heading">
 				<h3 class="panel-title">{{_ "add_post"}}</h3>
 			</div>
@@ -25,8 +27,9 @@
 				{{> afQuickField name="picture"}}
 				<button type="submit" class="btn btn-primary">{{_ "add_post_btn"}}</button>
 				{{/autoForm}}
+
 			</div>
-	</div>
+	</div> -->
 </template>
 
 <template name="addWithModal">
@@ -40,7 +43,7 @@
 	</div>
 </template>
 
-<template name="posts">
+<!-- <template name="posts">
 	{{#each orderByFavorites Posts}}
 		<div class="panel panel-default">
 				<div class="panel-heading">
@@ -84,6 +87,13 @@
 				</div>
 		</div>
 	{{/each}}
+
+
+</template> -->
+
+<template name="calendar">
+	{{> fullcalendar options }}
+	<!-- {{> calendar }} -->
 </template>
 
 <template name="favorites">
