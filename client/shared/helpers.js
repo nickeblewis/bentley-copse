@@ -24,25 +24,61 @@ Template.calendar.helpers({
           center: 'title',
           right: 'month,agendaWeek,agendaDay'
         },
-        dayClick:function(date,allDay,jsEvent,view){
-          var calendarEvent = {};
-          calendarEvent.start = date;
-          calendarEvent.end = date.add;
-          calendarEvent.title = 'New Event';
-          calendarEvent.owner = Meteor.userId();
-          Meteor.call('saveCalEvent',calendarEvent);
-        },
-        eventClick:function(calEvent,jsEvent,view){
-          Session.set('editing_event',calEvent._id);
-          $('#title').val(calEvent.title);
-        },
-        eventDrop:function(reqEvent){
-          Meteor.call('moveEvent',reqEvent);
-        },
-        events:function(start,end,callback){
-          var calEvents = CalEvent.find({},{reactive:false}).fetch();
-          callback(calEvents);
-        },
+        defaultDate: '2015-05-12',
+        timezone: 'Europe/London',
+        timeFormat: 'H(:mm)',
+        events: [
+				{
+					title: 'All Day Event',
+					start: '2015-05-01'
+				},
+				{
+					title: 'Long Event',
+					start: '2015-05-07',
+					end: '2015-05-10'
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: '2015-05-09T16:00:00'
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: '2015-05-16T16:00:00'
+				},
+				{
+					title: 'Conference',
+					start: '2015-05-11',
+					end: '2015-05-13'
+				},
+				{
+					title: 'Meeting',
+					start: '2015-05-12T10:30:00',
+					end: '2015-05-12T12:30:00'
+				},
+				{
+					title: 'Lunch',
+					start: '2015-05-12T12:00:00'
+				},
+				{
+					title: 'Meeting',
+					start: '2015-05-12T14:30:00'
+				},
+				{
+					title: 'Happy Hour',
+					start: '2015-05-12T17:30:00'
+				},
+				{
+					title: 'Dinner',
+					start: '2015-05-12T20:00:00'
+				},
+				{
+					title: 'Birthday Party',
+					start: '2015-05-13T07:00:00'
+				}],
+        // TODO: Add the actions back in here
+        defaultView: 'agendaWeek',
         editable:true,
         resizable: true,
         selectable:true,

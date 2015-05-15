@@ -4,7 +4,7 @@
 	"configName": "My App",
 	"configTitle": "Make Meteor Apps. Fast.",
 	"configSubtitle": "Create beautiful and functioning Meteor apps really quick",
-	
+
 	/*Home*/
 	"getstarted": "Get Started",
 	"dashboard": "Go to dashboard",
@@ -49,6 +49,11 @@
 	"edit_post": "Edit post",
 	"delete": "Delete",
 	"favorites": "Favorites",
+	"add_booking": "Add a Booking",
+	"add_booking_btn": "Add Booking",
+	"add_booking_modal": "Add with a modal",
+	"add_booking_modal_btn": "Add a new Booking",
+	"edit_booking": "Edit booking",
 
 	/*Account*/
 	"account_details": "Account Details",
@@ -70,7 +75,7 @@
 	"profilePicture": "Profile Picture"
 
 
-	
+
 
 
 }

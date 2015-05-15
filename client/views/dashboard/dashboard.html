@@ -1,22 +1,21 @@
 <template name="dashboard">
 	<div class="container">
 		<div class="row" id="champion-messages">
-			<!-- <div class="col-md-3">
-				{{> add}}
+			<div class="col-md-3">
+				<!-- {{> add}} -->
+				{{> addbooking}}
 				{{> favorites}}
-			</div> -->
-			<!-- <div class="col-md-9"> -->
-			<div class="col-md-12">
-				<!-- {{> posts}} -->
+			</div>
+			<div class="col-md-9">
+				{{> posts}}
 				{{> calendar}}
 			</div>
 		</div>
 	</div>
 </template>
 
-
-<template name="add">
-	<!-- <div class="panel panel-default">
+<!-- <template name="add">
+	<div class="panel panel-default">
 			<div class="panel-heading">
 				<h3 class="panel-title">{{_ "add_post"}}</h3>
 			</div>
@@ -29,7 +28,24 @@
 				{{/autoForm}}
 
 			</div>
-	</div> -->
+	</div>
+</template> -->
+
+<template name="addbooking">
+	<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">{{_ "add_booking"}}</h3>
+			</div>
+			<div class="panel-body">
+				{{#autoForm id="add" collection="Bookings" type="insert"}}
+				{{> afQuickField name="name"}}
+				<!-- {{> afQuickField name="content"}} -->
+				<!-- {{> afQuickField name="picture"}} -->
+				<button type="submit" class="btn btn-primary">{{_ "add_booking_btn"}}</button>
+				{{/autoForm}}
+
+			</div>
+	</div>
 </template>
 
 <template name="addWithModal">
@@ -43,7 +59,7 @@
 	</div>
 </template>
 
-<!-- <template name="posts">
+<template name="posts">
 	{{#each orderByFavorites Posts}}
 		<div class="panel panel-default">
 				<div class="panel-heading">
@@ -89,7 +105,7 @@
 	{{/each}}
 
 
-</template> -->
+</template>
 
 <template name="calendar">
 	{{> fullcalendar options }}
