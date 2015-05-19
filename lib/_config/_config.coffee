@@ -1,5 +1,5 @@
 @Config =
-	name: 'Bentley Copse'
+	name: 'Bentley Copse Scout Campsite'
 	title: ->
 			TAPi18n.__ 'configTitle'
 	subtitle: ->

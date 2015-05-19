@@ -1,12 +1,12 @@
 {
 
 	/*Config*/
-	"configName": "My App",
-	"configTitle": "Make Meteor Apps. Fast.",
-	"configSubtitle": "Create beautiful and functioning Meteor apps really quick",
+	"configName": "Bentley Copse",
+	"configTitle": "Let's have an adventure. Today!",
+	"configSubtitle": "Fantastic outdoor adventures to be had in the beautiful Surrey Hills",
 
 	/*Home*/
-	"getstarted": "Get Started",
+	"getstarted": "Let's Go",
 	"dashboard": "Go to dashboard",
 	"learn": "Learn more",
 	"intro": "Make Meteor Apps. Fast.",
@@ -49,7 +49,7 @@
 	"edit_post": "Edit post",
 	"delete": "Delete",
 	"favorites": "Favorites",
-	"add_booking": "Add a Booking",
+	"add_booking": "Make a Booking",
 	"add_booking_btn": "Add Booking",
 	"add_booking_modal": "Add with a modal",
 	"add_booking_modal_btn": "Add a new Booking",
